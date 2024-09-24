@@ -1,3 +1,127 @@
-h1 {
-  background-color: aquamarine;
+/* Reset dan Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fraunces;
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  background-color: #339551;
+  color: #ecf0f1;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* logo greenoasis */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+#main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+#main-nav ul li {
+  margin-left: 2rem;
+}
+
+#main-nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#main-nav ul li a:hover {
+  color: #e1dc53;
+}
+
+#menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ecf0f1;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Main */
+main {
+  margin-top: 60px;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* home */
+#home {
+  background-color: #f6f4dc;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #339551;
+  color: #f6f4dc;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #266533;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  #main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #339551;
+    padding: 1rem;
+  }
+
+  #main-nav ul.show {
+    display: flex;
+  }
+
+  #main-nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  #main-toggle {
+    display: flex;
+  }
 }
