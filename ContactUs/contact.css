@@ -60,3 +60,8 @@ header {
   margin: 3px 0;
   transition: 0.4s;
 }
+
+main {
+  margin-top: 60px;
+  padding: 2rem;
+}

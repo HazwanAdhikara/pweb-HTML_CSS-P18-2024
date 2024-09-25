@@ -6,6 +6,8 @@
 body {
   font-family: "Fraunces", serif;
   line-height: 1.6;
+  background-color: #f6f4dc;
+  background-blend-mode: lighten;
 }
 header {
   background-color: #339551;
@@ -59,4 +61,122 @@ header {
   background-color: #ecf0f1;
   margin: 3px 0;
   transition: 0.4s;
+}
+
+main {
+  margin-top: 60px;
+  padding: 2rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#first {
+  background: linear-gradient(90deg, #bee0c7, #f6f4dc, #e1dc53);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  margin: 0 20% 0 20%;
+  border-radius: 20px;
+}
+
+.explanation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10% 0 10%;
+}
+
+.main-explanation {
+  padding-top: 20px;
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.green-oasis {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  color: #339551;
+  background-color: #e1dc53;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.green-oasis:hover {
+  background-color: #bee0c7;
+  color: #f16838;
+}
+
+.text-explanation {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+#second {
+  margin-top: 50px;
+}
+
+.display-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  background-color: #bee0c7;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+.img-card {
+  padding: 20px;
+  width: 350px;
+  border-radius: 30px;
+}
+
+.text-card {
+  padding: 10px;
+}
+
+.bg-button {
+  margin: auto;
+  background-color: #ecf0f1;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.bg-button:hover {
+  background-color: #e1dc53;
+}
+
+.button-card {
+  font-weight: 700;
+  color: #f16838;
+  text-decoration: none;
 }
