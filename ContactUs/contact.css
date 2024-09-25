@@ -61,7 +61,124 @@ header {
   transition: 0.4s;
 }
 
-main {
-  margin-top: 60px;
-  padding: 2rem;
+.contact {
+  font-family: fraunces;
+  background: #E8FFCB;
+  color: #266533;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+.contact h1 {
+  font-size: 70px;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #F6F4DC;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form {
+  display: flex;
+  background: linear-gradient(to right, #E2DC54, #8BB953, #349552);
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #266533;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  padding: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: #F6F4DC;
+  font-family: fraunces;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #266533;
+  color: #F6F4DC;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: fraunces;
+  font-weight: 700;
+}
+
+.contact-form button:hover {
+  background-color: #1b4724;
+}
+
+.contact-form .maps {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.contact-item {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-item h3 {
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  margin-bottom: 5px;
+}
+
+.whatsapp {
+  background-color: #339551;
+  color: #E2DC54;
+}
+
+i.bxl-whatsapp, i.bx-envelope, i.bxl-instagram {
+  font-size: 35px;
+}
+
+.email {
+  background-color: #8BB953;
+  color: #266533;
+}
+
+.instagram {
+  background-color: #E2DC54;
+  color: #266533;
 }
