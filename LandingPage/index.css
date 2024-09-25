@@ -67,6 +67,11 @@ header {
   transition: 0.4s;
 }
 
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
 /* Main */
 main {
   margin-top: 60px;
@@ -97,33 +102,6 @@ section {
 
 .cta-button:hover {
   background-color: #266533;
-}
-
-/* responsive */
-
-@media (max-width: 768px) {
-  #main-nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #339551;
-    padding: 1rem;
-  }
-
-  #main-nav ul.show {
-    display: flex;
-  }
-
-  #main-nav ul li {
-    margin: 0.5rem 0;
-  }
-
-  #main-toggle {
-    display: flex;
-  }
 }
 
 /* katalog */
@@ -159,4 +137,106 @@ section {
 
 .buy-button:hover {
   background-color: #266533;
+}
+
+.see-more {
+  display: flex;
+  background-color: #339551;
+  color: #f6f4dc;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+.see-more:hover {
+  background-color: #266533;
+}
+
+/* testimoni */
+.testimoni-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimoni-card {
+  flex-basis: calc(33.33% - 1rem); /* untuk merapikan agar terlihat lurus */
+  background-color: #e1dc53;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.customer-name {
+  font-style: italic;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+/* Newsletter */
+
+#newsletter {
+  background-color: #339551;
+  padding: 2rem;
+  text-align: center;
+  color: #ecf0f1;
+}
+
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 300px;
+}
+
+#newsletter-form button {
+  padding: 0.5rem 1rem;
+  background-color: #e1dc53;
+  color: #266533;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#newsletter-form button:hover {
+  background-color: #f16838;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  #main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #339551;
+    padding: 1rem;
+  }
+
+  #main-nav ul.show {
+    display: flex;
+  }
+
+  #main-nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  #main-toggle {
+    display: flex;
+  }
+
+  .testimoni-card {
+    flex-basis: 100%;
+  }
 }
