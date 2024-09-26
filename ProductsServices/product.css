@@ -86,7 +86,7 @@ main {
 #first {
   background: linear-gradient(90deg, #bee0c7, #f6f4dc, #e1dc53);
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: gradient 4s ease infinite;
   margin: 0 20% 0 20%;
   border-radius: 20px;
 }
