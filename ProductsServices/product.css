@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Fraunces", serif;
   line-height: 1.6;
   background-color: #f6f4dc;
   background-blend-mode: lighten;
 }
+
 header {
   background-color: #339551;
   color: #ecf0f1;
@@ -18,6 +20,7 @@ header {
   top: 0;
   z-index: 1000;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -197,6 +200,57 @@ main {
   text-align: center;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#third {
+  margin: 50px 20%;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.content {
+  flex-direction: column;
+  height: auto;
+}
+
+.contact-image {
+  width: 80px;
+  height: 80px;
+}
+
+.content-title {
+  font-size: 2.5rem;
+}
+
+.content-text {
+  font-size: 1.3rem;
+  margin: 5px 0 20px 0;
+}
+
+.contact-background:hover {
+  background-color: #bee0c7;
+}
+
+.contact-background {
+  background-color: #e1dc53;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+}
+
+.contact-text {
+  color: #f16838;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
 footer {
   background-color: #339551;
   color: #ecf0f1;
@@ -234,4 +288,93 @@ footer {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #f6f4dc;
+}
+
+@media (max-width: 1024px) {
+  .display-card {
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+
+  .img-card {
+    height: 300px;
+  }
+
+  .green-oasis {
+    font-size: 2rem;
+  }
+
+  .main-explanation {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-explanation {
+    font-size: 1.1rem;
+  }
+
+  .content-title {
+    font-size: 2rem;
+  }
+
+  .content-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-card {
+    height: 250px;
+  }
+
+  .main-explanation {
+    font-size: 1.5rem;
+  }
+
+  .green-oasis {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .text-explanation {
+    font-size: 1rem;
+  }
+
+  .content-title {
+    font-size: 1.8rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
+  }
+
+  .contact-background {
+    width: 130px;
+    height: 45px;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
 }
