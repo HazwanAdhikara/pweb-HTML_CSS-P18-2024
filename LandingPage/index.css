@@ -5,17 +5,17 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: fraunces;
+  font-family: 'Fraunces', serif; 
   line-height: 1.6;
   background-color: #f6f4dc;
+  font-size: 1.1rem;
 }
 
 /* header */
@@ -94,8 +94,27 @@ section {
 #home {
   background-size: cover;
   background-color: #f6f4dc;
-  text-align: center;
-  padding: 5rem 0;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.home-text {
+  max-width: 60%; 
+}
+
+.home-image img {
+  width: 500px; 
+  height: auto;
+}
+
+.title {
+  font-size: 100px;
+  font-style: italic;
+  color: #266533;
 }
 
 .cta-button {
@@ -111,6 +130,42 @@ section {
 
 .cta-button:hover {
   background-color: #266533;
+}
+
+#about {
+  background-color: #266533;
+  height: 70vh;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 600px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.about-text {
+  width: 50%;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 5rem;
+  color: #f6f4dc;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #f6f4dc;
+  font-size: 1.2rem;
 }
 
 /* katalog */
@@ -135,7 +190,7 @@ section {
 
 .buy-button {
   display: inline-block;
-  background-color: #339551;
+  background-color: #F16838;
   color: #f6f4dc;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -145,7 +200,7 @@ section {
 }
 
 .buy-button:hover {
-  background-color: #266533;
+  background-color: #cd4818;
 }
 
 .see-more {
@@ -161,6 +216,44 @@ section {
 
 .see-more:hover {
   background-color: #266533;
+}
+
+#projects-services-gallery {
+  background-color: #266533; 
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+#projects-services-gallery h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  color: #f6f4dc;
+  margin-bottom: 2rem;
+}
+
+#projects-services-gallery h2 span {
+  font-style: italic;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  justify-items: center;
+}
+
+.gallery-item {
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
 }
 
 /* testimoni */
