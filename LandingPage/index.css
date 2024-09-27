@@ -5,14 +5,15 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 body {
-  font-family: 'Fraunces', serif; 
+  font-family: "Fraunces", serif;
   line-height: 1.6;
   background-color: #f6f4dc;
   font-size: 1.1rem;
@@ -99,16 +100,16 @@ section {
 
 .home-content {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
 .home-text {
-  max-width: 60%; 
+  max-width: 60%;
 }
 
 .home-image img {
-  width: 500px; 
+  width: 500px;
   height: auto;
 }
 
@@ -199,7 +200,7 @@ section {
 
 .buy-button {
   display: inline-block;
-  background-color: #F16838;
+  background-color: #f16838;
   color: #f6f4dc;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -228,7 +229,7 @@ section {
 }
 
 #projects-services-gallery {
-  background-color: #266533; 
+  background-color: #266533;
   padding: 3rem;
   text-align: center;
   border-radius: 30px;
@@ -238,7 +239,7 @@ section {
 }
 
 #projects-services-gallery h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 2.5rem;
   color: #f6f4dc;
   margin-bottom: 2rem;
@@ -250,7 +251,7 @@ section {
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
 
@@ -293,7 +294,7 @@ section {
   margin-top: 1rem;
 }
 
-#cta{
+#cta {
   padding: 3rem;
 }
 
@@ -303,6 +304,9 @@ section {
   padding: 2rem;
   text-align: center;
   color: #ecf0f1;
+  position: relative;
+  width: 105%;
+  left: -2rem;
 }
 
 #newsletter-form {
@@ -332,6 +336,7 @@ section {
 
 /* Footer */
 footer {
+  margin-bottom: -3rem;
   background-color: #339551;
   color: #ecf0f1;
   padding: 2rem 0;
