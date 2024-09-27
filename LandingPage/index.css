@@ -178,6 +178,11 @@ section {
 /* katalog */
 #galeri {
   padding: 3rem;
+  text-align: center;
+}
+
+#about {
+  padding: 5rem;
 }
 
 .product-grid {
@@ -234,8 +239,9 @@ section {
   text-align: center;
   border-radius: 30px;
   max-width: 1200px;
-  align-items: center;
-  margin: 0 auto;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin: auto;
 }
 
 #projects-services-gallery h2 {
@@ -272,8 +278,11 @@ section {
 
 /* testimoni */
 #testimoni {
-  padding: 3rem;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  text-align: center;
 }
+
 .testimoni-container {
   display: flex;
   flex-wrap: wrap;
@@ -295,7 +304,9 @@ section {
 }
 
 #cta {
-  padding: 3rem;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  text-align: center;
 }
 
 /* Newsletter */
