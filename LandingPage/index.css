@@ -396,6 +396,43 @@ footer {
     display: flex;
   }
 
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-image img {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .about-image img {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
   .testimoni-card {
     flex-basis: 100%;
   }

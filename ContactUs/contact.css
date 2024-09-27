@@ -295,4 +295,9 @@ footer {
     align-items: center;
     width: auto;
   }
+
+  .footer-section {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
