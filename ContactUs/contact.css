@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Fraunces", serif;
   line-height: 1.6;
 }
+
 header {
   background-color: #339551;
   color: #ecf0f1;
@@ -16,6 +18,7 @@ header {
   top: 0;
   z-index: 1000;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -47,6 +50,10 @@ header {
   color: #e1dc53;
 }
 
+#menu-checkbox {
+  display: none;
+}
+
 #menu-toggle {
   display: none;
   flex-direction: column;
@@ -75,7 +82,13 @@ img {
 }
 
 .contact {
-  background-image: repeating-linear-gradient(90deg, #D3F6A8, #D3F6A8 20px, #F6F4DC 20px, #F6F4DC 50px);
+  background-image: repeating-linear-gradient(
+    90deg,
+    #d3f6a8,
+    #d3f6a8 20px,
+    #f6f4dc 20px,
+    #f6f4dc 50px
+  );
   color: #266533;
   flex-direction: column;
   align-items: center;
@@ -111,7 +124,7 @@ img {
 
 .contact-form {
   display: flex;
-  background: linear-gradient(to right, #E2DC54, #8BB953, #349552);
+  background: linear-gradient(to right, #e2dc54, #8bb953, #349552);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -129,7 +142,8 @@ img {
   padding: 20px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 10px;
   border-radius: 5px;
   border: #f6f4dc;
@@ -206,16 +220,19 @@ i.bxl-instagram {
   color: #266533;
 }
 
-.ig-link, .email-link {
-  color:#266533
+.ig-link,
+.email-link {
+  color: #266533;
 }
 
 .wa-link {
-  color: #E2DC54;
+  color: #e2dc54;
 }
 
-.ig-link:hover, .wa-link:hover, .email-link:hover {
-  color: #F16838;
+.ig-link:hover,
+.wa-link:hover,
+.email-link:hover {
+  color: #f16838;
 }
 
 footer {
@@ -257,6 +274,33 @@ footer {
   border-top: 1px solid #f6f4dc;
 }
 
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  #main-nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #339551;
+  }
+
+  #main-nav ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: flex;
+  }
+
+  #menu-checkbox:checked ~ ul {
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) {
   .contact {
     padding: 20px;
@@ -283,7 +327,7 @@ footer {
     height: auto;
   }
 
- .contact-info {
+  .contact-info {
     flex-direction: column;
     width: 100%;
     align-items: center;
