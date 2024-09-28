@@ -123,15 +123,23 @@ img {
 }
 
 .contact-form {
-  display: flex;
   background: linear-gradient(to right, #e2dc54, #8bb953, #349552);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   width: 80%;
-  justify-content: space-between;
   margin-bottom: 50px;
   color: #266533;
+}
+
+.contact-form h2 {
+  font-size: 45px;
+  margin-left: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-form form {
@@ -148,6 +156,7 @@ img {
   border-radius: 5px;
   border: #f6f4dc;
   font-family: fraunces;
+  resize: none;
 }
 
 .contact-form button {
@@ -197,6 +206,12 @@ img {
 
 .contact-item p {
   margin-bottom: 5px;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
 }
 
 .whatsapp {
@@ -302,10 +317,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .contact {
-    padding: 20px;
-  }
-
   #main-nav ul {
     display: none;
   }
@@ -327,17 +338,25 @@ footer {
     height: auto;
   }
 
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact-info {
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 20px;
+    text-align: center;
+    font-size: 15px;
   }
 
   .contact-form {
     flex-direction: column;
     align-items: center;
     width: auto;
+    text-align: center;
   }
 
   .footer-section {
